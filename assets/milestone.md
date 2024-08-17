@@ -1,7 +1,7 @@
-# **DESCRIPCIÓN:**
+# **Descripción:**
 Crear un portafolio personal, que muestre habilidades y proyectos. El portafolio debe ser una página web responsiva que incluya secciones como información personal (nombre y breve descripción), habilidades, proyectos realizados y formulario de contacto.
 
-## REQUERIMIENTOS:
+## **Requerimientos**:
 
 ### 1. Estructura HTML (15 puntos):
 - Uso correcto de etiquetas semánticas.
