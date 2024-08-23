@@ -16,7 +16,7 @@ This project is an exercise on what a personal portfolio for the character Tara 
 
 The portfolio is a responsive web page that includes sections such as personal information (name and brief description), skills, completed projects, and a contact form.
 
-## 2. Diseño de la Interfaz 🚧
+## 2. Interface Design 🚧
 ...
 
 ## 3. Features 🚧
