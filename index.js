@@ -11,6 +11,7 @@ const routes = {
     '/alice': Alice,
     '/buck': Buck,
     '/t': T,
+/*     '/404': NotFound, */
 };
 
 setRoutes(routes);
@@ -19,8 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
     setRootEl(document.getElementById('root'));
 
     onURLChange(window.location);
+});
 
-    window.addEventListener('popstate', () => {
-        onURLChange(window.location);
-    });
+window.addEventListener('popstate', () => {
+    onURLChange(window.location);
 });
