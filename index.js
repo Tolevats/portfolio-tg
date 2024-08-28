@@ -5,13 +5,18 @@ import Home from './views/Home.js';
 import Alice from './views/Alice.js';
 import Buck from './views/Buck.js';
 import T from './views/T.js';
+import About from './views/About.js';
+import Contact from './views/Contact.js';
+import NotFound from './views/NotFound.js';
 
 const routes = {
     '/': Home,
+    '/about': About,
+    '/contact': Contact,
     '/alice': Alice,
     '/buck': Buck,
     '/t': T,
-/*     '/404': NotFound, */
+    '/404': NotFound,
 };
 
 setRoutes(routes);
