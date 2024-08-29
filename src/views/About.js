@@ -7,7 +7,7 @@ const About = () => {
     mainEl.innerHTML = `
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/home"> Home</a></li>
+            <li class="breadcrumb-item"><a href="/"> Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">About</li>
             <li class="breadcrumb-item"><a href="/contact">Contact</a></li>
         </ol>
