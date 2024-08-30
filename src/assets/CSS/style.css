@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gochi+Hand&family=Homemade+Apple&family=Permanent+Marker&family=Sacramento&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*COMPONENTS*/
+/* nav {
+    :;
+} */
+nav, h2, h3, h5, p, li {
+    font-family: "Cormorant Garamond", serif;
+} 
+
+nav, h2, h3, p {
+    padding: 30px 50px 0 50px;
+}
+
+header h1, .author {
+    font-family: "Homemade Apple", cursive;
+}
+
+header h1 {
+    padding: 20px 50px 0;
+}
+
+ul.artistic, ul.soft {
+    padding: 0 0 0 50px;
+}
+
+.author, .copy {
+    padding: 0 50px;
+    text-align: center;
+}
+
+.author {
+    margin: 20px 0 0;
+    padding-top: 50px;
+}
+
+/*HOME view*/
+h5.title-caption, p.caption {
+    color: #85725a;
+  }
+
+/*ABOUT view*/
+#profile img {
+    max-width: 100%; /* permite que la imagen se ajuste al ancho de su contenedor */
+    height: auto; /* mantiene las proporciones de la imagen */
+    padding: 10px 50px;
+  }
+
+  .Alice {
+    font-family: Sacramento, system-ui;
+    text-align: right;
+    font-size: 2rem;
+  }
+  
+  .T {
+    font-family: "Gochi Hand", cursive;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .Buck {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 768px) { /* Para pantallas medianas y grandes */
+    #profile img {
+      max-width: 1000px;
+      height: auto;
+    }
+  }
+
+/*CONTACT view*/
+form {
+    font-family: "Cormorant Garamond", serif;;
+}
+
+h1 {
+    padding: 50px 0 10px 50px;
+}
