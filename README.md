@@ -30,21 +30,20 @@ _**Problem Statement**_: Tara Gregson, a woman with dissociative identity disord
 _**Product Goal**_: To create a personal portfolio that effectively highlights Tara's abilities and experiences while mitigating the impact of her dissociative identity disorder.
 
 ## 3. Interface Design 
-- Wireframes: ... 🚧
-![](/)
+- Wireframes Mobile First:
+![Main views navigation](/src/assets/imgs/main-wireframes.png)
 - High fidelity prototypes:
-... 🚧
+![]() 🚧
 
-## 4. Features 🚧
+## 4. Features
 - A gallery that showcases Tara's work 
 - A form to contact Tara
 
-## 5. Technical Considerations 🚧
+## 5. Technical Considerations
 - This portfolio is a responsive SPA that uses Bootstrap v5.3 elements for styling
 - It is built with Vanilla Javascript
-- Responisveness 
 
-## 6. To be implemented 🚧 
+## 6. To be implemented ... 🚧 
 - Database generation for (gallery and/or multiple personality integration)
 - Code Testing
 - Usability tests
