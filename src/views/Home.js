@@ -1,10 +1,10 @@
 import { Header } from "../components/Header.js";
-//import { Nav } from "../components/Nav.js";
+import { Nav } from "../components/Nav.js";
 import { Footer } from "../components/Footer.js";
 
 const Home = () => {
-    const mainEl = document.createElement('main');
-    mainEl.innerHTML = `
+    const bodyEl = document.createElement('body');
+    bodyEl.innerHTML = `
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -60,15 +60,15 @@ const Home = () => {
     `
 
     // HEADER
-    mainEl.prepend(Header());
+    bodyEl.prepend(Header());
 
     // NAV
-   // mainEl.appendChild(Nav());
+    bodyEl.appendChild(Nav());
 
     //FOOTER
-    mainEl.appendChild(Footer());
+    bodyEl.appendChild(Footer());
 
-    return mainEl;
+    return bodyEl;
 };
 
 export default Home;

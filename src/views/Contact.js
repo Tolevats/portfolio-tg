@@ -1,10 +1,10 @@
 import { Header } from "../components/Header.js";
-//import { Nav } from "../components/Nav.js";
+import { Nav } from "../components/Nav.js";
 import { Footer } from "../components/Footer.js";
 
 const Contact = () => {
-    const formEl = document.createElement('form');
-    formEl.innerHTML = `
+    const bodyEl = document.createElement('body');
+    bodyEl.innerHTML = `
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -12,9 +12,10 @@ const Contact = () => {
             <li class="breadcrumb-item active aria-current="page">Contact</li>
         </ol>
     </nav>
-        
-    <form class="row g-3 needs-validation" novalidate>
-        <h1>Let's connect!</h1>
+
+    <h1>Let's connect!</h1>
+
+    <form class="row g-3 needs-validation" novalidate>    
         <div class="container mx-auto">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
@@ -32,12 +33,12 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="column">
                 <div class="col-md-6 col-sm-12">
                     <label for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12" id="message">
                     <label for="textArea" class="form-label">Message</label>
                     <textarea class="form-control" id="textArea" rows="3" placeholder="Write me for more information 😉" required></textarea>
                 </div>
@@ -55,15 +56,15 @@ const Contact = () => {
     </form>
     `
     // HEADER
-    formEl.prepend(Header());
+    bodyEl.prepend(Header());
 
  // NAV
-// mainEl.appendChild(Nav());
+    bodyEl.appendChild(Nav());
 
     //FOOTER
-    formEl.appendChild(Footer());
+    bodyEl.appendChild(Footer());
 
-    return formEl;
+    return bodyEl;
 };
 
 export default Contact;

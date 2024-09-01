@@ -1,10 +1,10 @@
 import { Header } from "../components/Header.js";
-//import { Nav } from "../components/Nav.js";
+import { Nav } from "../components/Nav.js";
 import { Footer } from "../components/Footer.js";
 
 const About = () => {
-    const mainEl = document.createElement('main');
-    mainEl.innerHTML = `
+    const bodyEl = document.createElement('body');
+    bodyEl.innerHTML = `
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/"> Home</a></li>
@@ -23,37 +23,41 @@ const About = () => {
         <p class="Buck">I just don't understand art. -B</p>
     </section>
     <aside>
-        <h3>Skills</h3>
-        <ul class="artistic">
-            <li>Mural painting</li>
-            <li>Portraits</li>
-            <li>Drawing</li>
-            <li>Sketching</li>
-            <li>Interior design</li>
-        </ul>
-        <h3>Soft skills</h3>    
-        <ul class="soft">
-            <li>Creative Expression</li>
-            <li>Versatility</li>
-            <li>Resilience</li>
-            <li>Empathy and Emotional Intelligence</li>
-            <li>Collaboration</li>
-            <li>Storytelling</li>
-            <li>Adaptability</li>
-            <li>Mental Health Advocacy</li>
-        </ul>
+        <div class="container-skills">
+            <h3>Skills</h3>
+            <ul class="artistic">
+                <li>Mural painting</li>
+                <li>Portraits</li>
+                <li>Drawing</li>
+                <li>Sketching</li>
+                <li>Interior design</li>
+            </ul>
+        </div>
+        <div class="container-soft">
+            <h3>Soft skills</h3>    
+            <ul class="soft">
+                <li>Creative Expression</li>
+                <li>Versatility</li>
+                <li>Resilience</li>
+                <li>Empathy and Emotional Intelligence</li>
+                <li>Collaboration</li>
+                <li>Storytelling</li>
+                <li>Adaptability</li>
+                <li>Mental Health Advocacy</li>
+            </ul>
+        </div>
     </aside>
     `
     // HEADER
-    mainEl.prepend(Header());
+    bodyEl.prepend(Header());
 
  // NAV bootom
-    //mainEl.appendChild(Nav());
+    bodyEl.appendChild(Nav());
 
     //FOOTER
-    mainEl.appendChild(Footer());
+    bodyEl.appendChild(Footer());
 
-    return mainEl;
+    return bodyEl;
 };
 
 export default About;
