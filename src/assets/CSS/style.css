@@ -6,10 +6,23 @@
     padding: 0;
 }
 
+/************************************MOBILE FIRST************************************/
 /*COMPONENTS*/
-/* nav {
-    :;
-} */
+nav {
+  background-color: #c5b6a3;
+}
+
+.container-nav {
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+}
+
+.container-nav ul,
+.container-nav form,
+.container-nav .social-links {
+  width: 100%; /* elements take full width */
+}
+
 nav, h2, h3, h5, p, li {
     font-family: "Cormorant Garamond", serif;
 } 
@@ -52,6 +65,11 @@ h5.title-caption, p.caption {
     padding: 10px 50px;
   }
 
+.container-skills, .container-soft {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+}
+
   .Alice {
     font-family: Sacramento, system-ui;
     text-align: right;
@@ -70,18 +88,42 @@ h5.title-caption, p.caption {
     font-size: 1.5rem;
   }
 
-  @media (min-width: 768px) { /* Para pantallas medianas y grandes */
+
+/*CONTACT view*/
+h1 {
+  font-family: "Cormorant Garamond", serif;
+    padding: 50px 0 30px 50px;
+}
+
+form {
+    font-family: "Cormorant Garamond", serif;
+    padding: 0 50px 10px 50px;
+}
+
+
+
+/************************************MEDIA QUERIES************************************/
+@media (min-width: 768px) {
+  .container-nav {
+    flex-direction: row; /* arrange elements side-by-side */
+  }
+
+  .container-nav ul,
+  .container-nav form,
+  .container-nav .social-links {
+    width: 25%; /* each element takes 1/4th width */
+  }
+}
+
+@media (min-width: 768px) { /* Para pantallas medianas y grandes */
     #profile img {
       max-width: 1000px;
       height: auto;
     }
   }
 
-/*CONTACT view*/
-form {
-    font-family: "Cormorant Garamond", serif;;
-}
-
-h1 {
-    padding: 50px 0 10px 50px;
+@media (min-width: 768px) { /* Para pantallas medianas y grandes */
+ .container {
+    align-content: center;
+  }
 }
