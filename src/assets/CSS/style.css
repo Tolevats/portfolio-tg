@@ -6,21 +6,57 @@
     padding: 0;
 }
 
+body {
+  background-color: #F8F4E1;
+}
+
 /************************************MOBILE FIRST************************************/
 /*COMPONENTS*/
+header h1 {
+  padding: 20px 50px 0;
+}
+
 nav {
-  background-color: #c5b6a3;
+  background-color: /*#E3E1D9 */#AF8F6F;
+  display: flex; /* Make the outer nav a flexbox */
+  justify-content: center; /* Horizontally center `nav.bottom` */
+}
+
+nav.top{
+  margin-top: 20px;
+}
+
+ol.breadcrumb {
+  padding: 10px 0 10px 0;
 }
 
 .container-nav {
-  display: flex;
+  display: flex; /* make the container a flexbox */
   flex-direction: column; /* stack elements vertically */
+  align-items: center; /* horizontally center elements */
 }
 
 .container-nav ul,
 .container-nav form,
 .container-nav .social-links {
   width: 100%; /* elements take full width */
+}
+
+.other-sections,
+.alters {
+  list-style: none; /* remove bullet points */
+  padding: 0; /* remove default list padding */
+}
+
+.social-links {
+  display: flex; /* make social links a row */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* sdd some spacing between icons */
 }
 
 nav, h2, h3, h5, p, li {
@@ -35,27 +71,27 @@ header h1, .author {
     font-family: "Homemade Apple", cursive;
 }
 
-header h1 {
-    padding: 20px 50px 0;
-}
-
-ul.artistic, ul.soft {
-    padding: 0 0 0 50px;
-}
-
 .author, .copy {
-    padding: 0 50px;
+    padding: 0;
     text-align: center;
 }
 
 .author {
-    margin: 20px 0 0;
-    padding-top: 50px;
+    margin: 20px 0 0 0;
 }
 
 /*HOME view*/
-h5.title-caption, p.caption {
-    color: #85725a;
+#carouselCaptions .carousel-item.active img {
+  box-shadow: 0 4px 8px rgba(50, 50, 50, 0.8); // Un gris más oscuro
+}
+
+section.projects {
+  margin: 10px, 0;
+}
+
+  .carousel-caption h5, p {
+    font-weight: bold;
+    font-size: 24px;
   }
 
 /*ABOUT view*/
@@ -67,7 +103,16 @@ h5.title-caption, p.caption {
 
 .container-skills, .container-soft {
     display: flex;
-    flex-direction: column; /* Stack vertically on mobile */
+    flex-direction: column; /*stack vertically on mobile */
+}
+
+.container-skills h3, .container-soft h3 {
+  position: relative;
+  top: -20px; /* Adjust as needed */
+}
+
+ul.artistic, ul.soft {
+    padding: 0 0 0 50px;
 }
 
   .Alice {
@@ -100,8 +145,6 @@ form {
     padding: 0 50px 10px 50px;
 }
 
-
-
 /************************************MEDIA QUERIES************************************/
 @media (min-width: 768px) {
   .container-nav {
@@ -126,4 +169,23 @@ form {
  .container {
     align-content: center;
   }
+}
+
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+  .container-skills, .container-soft {
+      flex-direction: row; /* Arrange side-by-side on tablets and desktops */
+      flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  }
+
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+  .container-skills, .container-soft {
+      flex-direction: row; /* Arrange side-by-side on tablets and desktops */
+      justify-content: space-between; /* Distribute divs evenly */
+      flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  }
+
+  .container-skills ul, .container-soft ul {
+      flex: 1; /* Equal width for each column */
+  }
+}
 }
