@@ -82,7 +82,7 @@ header h1, .author {
 
 /*HOME view*/
 #carouselCaptions .carousel-item.active img {
-  box-shadow: 0 4px 8px rgba(50, 50, 50, 0.8); // Un gris más oscuro
+  box-shadow: 0 4px 8px rgba(50, 50, 50, 0.8);
 }
 
 section.projects {
