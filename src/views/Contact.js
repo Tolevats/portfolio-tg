@@ -1,6 +1,7 @@
 import { Header } from "../components/Header.js";
 import { Nav } from "../components/Nav.js";
 import { Footer } from "../components/Footer.js";
+//import { Modal } from "./Modal.js";
 
 const Contact = () => {
     const bodyEl = document.createElement('body');
@@ -15,7 +16,7 @@ const Contact = () => {
 
     <h1>Let's connect!</h1>
 
-    <form class="row g-3 needs-validation" novalidate>    
+    <form class="row g-3 needs-validation contact-form" novalidate>    
         <div class="container mx-auto">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
@@ -58,13 +59,19 @@ const Contact = () => {
     // HEADER
     bodyEl.prepend(Header());
 
- // NAV
+    // NAV
     bodyEl.appendChild(Nav());
+
+/*     const submitButton = document.querySelector('.btn-primary');
+    submitButton.addEventListener('click', () => {
+        Modal('Thank you for your message! I will get back to you soon.');
+    }); */
 
     //FOOTER
     bodyEl.appendChild(Footer());
 
     return bodyEl;
+
 };
 
 export default Contact;
