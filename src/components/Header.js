@@ -8,5 +8,3 @@ export const Header = () => {
 
     return headerEl;
 }
-
-//faltaría agregar un logo o ícono al costado derecho
