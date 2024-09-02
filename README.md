@@ -32,18 +32,24 @@ _**Product Goal**_: To create a personal portfolio that effectively highlights T
 ## 3. Interface Design 
 - Wireframes Mobile First:
 ![Main views navigation](/src/assets/imgs/main-wireframes.png)
-- High fidelity prototypes:
-![]() 🚧
 
 ## 4. Features
-- A gallery that showcases Tara's work 
-- A form to contact Tara
+- A carousel that showcases Tara's recent work 
+- A simple form to contact Tara
 
 ## 5. Technical Considerations
 - This portfolio is a responsive SPA that uses Bootstrap v5.3 elements for styling
 - It is built with Vanilla Javascript
 
-## 6. To be implemented ... 🚧 
-- Database generation for (gallery and/or multiple personality integration)
+## 6. To be implemented in the near future 🚧 
+- In _Home view_:
+    - Clicking on a project should open a modal window with more detailed information, including additional images and/or a longer description.
+    - The modal window should have a close button in the top right corner to allow the user to easily close it.
+    - Another section to showcase the clients Tara has worked with
+- In _Contact view_:
+    - Convert the form alert into a modal
+- Add search filters
+- Implement page not found
+- Database generation for a gallery of all projects and/or multiple personality integration
 - Code Testing
 - Usability tests
