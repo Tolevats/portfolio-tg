@@ -1,0 +1,61 @@
+/*Stlye for CONTACT view*/
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    padding: 50px 0 30px 50px;
+}
+  
+form {
+    font-family: "Cormorant Garamond", serif;
+    padding: 0 50px 10px 50px;
+}
+
+/* Mobile First: One-column layout */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Centering form title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form inputs full-width on mobile */
+input,
+textarea {
+    width: 100%;
+}
+
+/* Form labels aligned left */
+.form-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Responsive layout for larger screens (450px and up) */
+@media (min-width: 450px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Side-by-side layout for inputs */
+    .col-md-6 {
+        flex-basis: 48%;
+    }
+
+    /* Adjusting spacing for larger screens */
+    .contact-form {
+        padding: 2rem;
+    }
+}
+
+/* Centering the submit button */
+.text-center button {
+    width: 150px;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}

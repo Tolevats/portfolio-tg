@@ -1,0 +1,25 @@
+/*Style for HOME view*/
+  
+/* style for previous and next button icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 30%; /* Make the background circular */
+  padding: 40%; /* Add some padding around the icon */
+  width: 40px; /* Adjust the size of the icon's background */
+  height: 40px;
+}
+
+/* change the background color on hover for a more interactive effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* carousel caption text styles */
+.carousel-caption h5,
+.carousel-caption p {
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* add text shadow for better readability */
+}
+  

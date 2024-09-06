@@ -3,7 +3,7 @@ export const Footer = () => {
     footerEl.innerHTML = `
     <section class="footer sticky-bottom">
         <p class="author">Made with 🖤 by Tolevats</p>
-        <p class="copy">2024 &copy;</p>
+        <p class="copy"> &copy; Copyright 2024</p>
     </section>
     `;
 
