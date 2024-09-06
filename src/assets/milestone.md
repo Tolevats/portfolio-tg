@@ -15,7 +15,7 @@ Crear un portafolio personal, que muestre habilidades y proyectos. El portafolio
 - [x] Integración de al menos un componente de Bootstrap.
 - [x] Uso adecuado de clases y estilos de Bootstrap. 
 ### 4. JavaScritp básico (15 puntos)
-- [ ] Interactividad básica (por ejemplo, efectos al hacer clic).
+- [x] Interactividad básica (por ejemplo, efectos al hacer clic).
 - [x] Manipulación del DOM para actualizar contenido dinámicamente.
 - [x] Puedes utilizar JavaScript vanilla o JQuery.
 ### 5. Proyectos y habilidades (10 puntos)

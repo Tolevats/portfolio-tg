@@ -1,0 +1,97 @@
+/* style for ABOUT view */
+
+/* ----------------- Tara ----------------- */
+#profile img {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+
+aside.row {
+  margin: 3gi0px 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-skills, .container-soft {
+  margin-bottom: 20px; /* Add spacing between columns on small screens */
+}
+
+@media (min-width: 768px) {
+  .container-skills, .container-soft {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* style for Alice, T, and Buck personalities */
+  .Alice {
+    font-family: Sacramento, system-ui;
+    color: #ff69b4;
+ /*    background-color: rgb(255, 105, 180, 0.1); */
+    text-align: right;
+    font-size: 2rem;
+    animation: alice-animation 2s ease-in-out 1s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes alice-animation {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .T {
+    font-family: "Gochi Hand", cursive;
+    color: #4b0082; 
+    text-align: left;
+    font-size: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    animation: t-animation 2s ease-in-out 2s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes t-animation {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .Buck {
+    font-family: "Permanent Marker", cursive;
+    color: #ff4500;
+/*     background-color: rgba(255, 69, 0, 0.1); */
+    text-align: center;
+    font-size: 1.5rem;
+    animation: buck-animation 2s ease-in-out 3s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes buck-animation {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
